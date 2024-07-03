@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap');
+
+/*--------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "menus contenido";
+    width: 100%;
+    height: 100vh;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+.menus {
+    grid-area: menus;
+    background: #141414;
+    height: 100vh;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+.opciones {
+    text-align: center;
+    margin: 5rem auto;
+    font-size: 20px;
+}
+
+.opciones img {
+    width: 200px ;
+    height: 200px ;
+    border-radius: 15px;
+    margin-bottom:10px;
+    transition: 1s;
+    /* box-shadow:  0 0 20px #9bffff, 0 0 20px #9bffff; */
+}
+
+.opciones p {
+    font-family: "Playwrite CO", cursive;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.opciones p:hover {
+    text-shadow: 0 0 10px #05d3f8, 0 0 10px #05d3f8;
+}
+
+.opciones a {
+    color: white;
+}
+
+.opciones a:hover {
+    text-shadow: 0 0 20px #05d3f8, 0 0 20px #05d3f8;
+}
+
+.opciones li {
+    margin-bottom: 10px;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+.contenido {
+    grid-area: contenido;
+    background-image: url(media/fondo7.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------*/
+.contenedor {
+    width: 100%;
+    height: 100vh;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+.caja {
+    height: 80vh;
+    width: 80%;
+    background: linear-gradient(rgba(5,7,12, .50), rgba(5,7,12, .50));
+    /*backdrop-filter: blur(10px);*/
+    border-radius: 15px;
+    margin: 60px auto;
+    /*border: 5px solid white;
+    box-shadow: inset 0 0 10px #9bffff, 0 0 10px #9bffff;*/
+    text-align: center;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+#presentacion h1 {
+    font-size: 50px;
+    padding-top: 90px;
+}
+
+#presentacion span {
+    color: white;
+    font-family: "Playwrite CO", cursive;
+    text-shadow: 0 0 10px #05d3f8, 0 0 10px #05d3f8;
+}
+
+#frase {
+    color: #05d3f8;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+button {
+    font-size: 20px;
+    width: 170px;
+    height: 50px;
+    margin: 20px;
+    color: white;
+    border: solid 3px black;
+    background-color: black;
+    border-radius: 15px 95px  110px 95px;
+    box-shadow: 5px 5px 10px #05d3f8,
+                -5px -5px 10px #caf729;
+    transition: 1s;
+}
+
+button:hover {
+    box-shadow: 5px 5px 10px #caf729,
+                -5px -5px 10px #05d3f8;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+.redes img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-top: 20px;
+    border-radius: 30%;
+    box-shadow: 0 0 10px black;
+}
+
+.redes img:hover {
+    scale: 1.1;
+    box-shadow: 0 5px 5px #9bffff;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+.redes-info {
+    margin-top: 7.2rem;
+}
+
+.redes-info a{
+    color: #05d3f8;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+#sobremi h1{
+    padding-top: 70px;
+}
+
+.texto1 {
+    width: 70%;
+    margin: 3rem auto;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+.importante {
+    margin-top: 2rem;
+    color: #05d3f8;
+}
+/*--------------------------------------------------*/
+
+/*--------------------------------------------------*/
+.proyetos {
+    width: 80%;
+    overflow: auto;
+    gap: 2rem;
+}
+
+/*--------------------------------------------------*/
+#portfolio h1 {
+    padding-top: 40px;
+}
+
+#portfolio span {
+    color: #05d3f8;
+}
+
+.caja_container {
+    display: flex;
+    width: 800px;
+    height: auto;
+    overflow: auto;
+    margin: 2rem auto;
+}
+
+.proyecto {
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    backdrop-filter: blur(10px);
+    margin: 20px;
+    width: 400px;
+}
+
+.proyecto p {
+    margin: 10px;
+}
+
+.imagen_proyecto {
+    width: 360px;
+    height: 180px;
+}
+
+.scrollbar{
+    display: flex;
+}
+
+.html {
+    background: orange;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.css {
+    background: #1798c2;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.python {
+    background: rgb(3,152,255);
+    background: linear-gradient(90deg, rgba(3,152,255,1) 50%, rgba(3,152,255,1) 50%, rgba(255,213,0,1) 50%);
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.tkinter {
+    background: white;
+    color: red;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.javascript {
+    background: #ffbc11;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/*-----------------------------------*/
+#formacion h1 {
+    padding-top: 50px;
+}
+
+.formation {
+    margin: auto;
+    padding: 2rem;
+}
+
+.cursos {
+    height: 50vh;
+    overflow: auto;
+}
+
+.cursos button {
+    font-size: 16px;
+    width: 150px;
+    height: 30px;
+    margin: 20px;
+    color: black;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+    transition: .5s;
+}
+
+.cursos button:hover {
+    box-shadow: 5px 5px 10px #05d3f8,
+                -5px -5px 10px #caf729;
+}
+/*-----------------------------------*/
+
+/*------------------------------------*/
+.skills {
+    margin: 0 auto;
+}
+
+.skills h1 {
+    padding-top: 40px;
+}
+
+.skills h2{
+    margin: 10px 0;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.skills li{
+    margin: 1px 5px;
+}
+
+.skills img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+}
+
+.skills img:hover {
+    scale: 1.1;
+    box-shadow: 0 0 10px white;
+}
+
+.skills p {
+    margin: 25px auto;
+    width: 70%;
+}
+/*------------------------------------*/
+
+/*------------------------------------*/
+#contacto h1{
+    padding-top: 50px;
+}
+
+.contact {
+    display: flex;
+    float: left;
+    width: 100%;
+}
+
+.redes2 li {
+    margin: 10px;
+}
+
+.redes2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    box-shadow: 0 0 10px black;
+}
+
+.redes2 img:hover {
+    scale: 1.1;
+    box-shadow: 0 5px 5px #9bffff;
+}
+
+.redes2 {
+    width: 10%;
+    margin: 1rem;
+}
+
+.redes-info2 {
+    width: 50%;
+    margin: 8rem;
+}
+
+.redes-info2 span {
+    color: #05d3f8;
+}
+
+.redes-info2 a{
+    color: #05d3f8;
+}
