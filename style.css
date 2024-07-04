@@ -140,12 +140,14 @@ button {
     border-radius: 15px 95px  110px 95px;
     box-shadow: 5px 5px 10px #05d3f8,
                 -5px -5px 10px #caf729;
-    transition: 1s;
+    transition: .5s;
 }
 
 button:hover {
     box-shadow: 5px 5px 10px #caf729,
                 -5px -5px 10px #05d3f8;
+    scale: 1.1;
+    cursor: pointer;
 }
 /*--------------------------------------------------*/
 
@@ -385,7 +387,8 @@ button:hover {
 
 .redes-info2 {
     width: 50%;
-    margin: 8rem;
+    margin: 4rem;
+    padding-left: 50px;
 }
 
 .redes-info2 span {
@@ -394,4 +397,10 @@ button:hover {
 
 .redes-info2 a{
     color: #05d3f8;
+}
+
+.redes-info2 img {
+    width: 200px;
+    margin: 30px;
+    box-shadow: 0 0 5px;
 }
